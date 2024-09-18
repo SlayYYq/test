@@ -1,4 +1,3 @@
-
 local passes, fails, undefined = 0, 0, 0
 local running = 0
 
@@ -11,7 +10,7 @@ local function getGlobal(path)
 		path = nextValue
 	end
 
-	return value
+	return true
 end
 
 local function test(name, aliases, callback)
